@@ -1,0 +1,424 @@
+<!doctype html>
+<html >
+
+    <head>
+        <meta charset="utf-8">
+        <title>Pixate</title>
+        <link rel="canonical" href="index.html" />
+		<link rel="icon" sizes="192x192" type="image/png" href="P.png">
+		<link rel="icon" sizes="32x32" type="image/png" href="P-32x32.png">
+		<link rel="icon" sizes="16x16" type="image/png" href="P-16x16.png">
+        <meta name="viewport" content="width=device-width,minimum-scale=1">
+		<meta name="description" content="Pixate Project website. We make custom WatchFaces for Mi Band">
+		<meta name="keywords" content="Mi Band 4,WF,Custom WF,WatchFace,Pixate">
+        <style amp-boilerplate>
+            body {
+                -webkit-animation:-amp-start 8s steps(1, end) 0s 1 normal both;
+                -moz-animation:-amp-start 8s steps(1, end) 0s 1 normal both;
+                -ms-animation:-amp-start 8s steps(1, end) 0s 1 normal both;
+                animation:-amp-start 8s steps(1, end) 0s 1 normal both
+            }
+            @-webkit-keyframes -amp-start {
+                from {
+                    visibility:hidden
+                }
+                to {
+                    visibility:visible
+                }
+            }
+            @-moz-keyframes -amp-start {
+                from {
+                    visibility:hidden
+                }
+                to {
+                    visibility:visible
+                }
+            }
+            @-ms-keyframes -amp-start {
+                from {
+                    visibility:hidden
+                }
+                to {
+                    visibility:visible
+                }
+            }
+            @-o-keyframes -amp-start {
+                from {
+                    visibility:hidden
+                }
+                to {
+                    visibility:visible
+                }
+            }
+            @keyframes -amp-start {
+                from {
+                    visibility:hidden
+                }
+                to {
+                    visibility:visible
+                }
+            }
+        </style>
+        <noscript>
+            <style amp-boilerplate>
+                body {
+                    -webkit-animation:none;
+                    -moz-animation:none;
+                    -ms-animation:none;
+                    animation:none
+                }
+            </style>
+        </noscript>
+        <script async src="https://cdn.ampproject.org/v0.js"></script>
+
+        <link href="https://fonts.googleapis.com/css?family=K2D&display=swap" rel="stylesheet"></link>
+
+        <style amp-custom>
+            body {
+                font-family:'K2D', sans-serif;
+                background-color: black;
+                color: white;
+            }
+            h3 {
+                font-family:'K2D', sans-serif;
+                margin: 2px 0;
+            }
+            h2 {
+                font-family:'K2D', sans-serif;
+            }
+            span {
+                margin: 5px 5px;
+            }
+            ul {
+                text-align: left;
+            }
+			a {
+				text-decoration: none;
+				color: #00BCD4;
+			}
+            amp-img {
+                width: 100%;
+                height: auto;
+                border-radius: 15px;
+            }
+            
+            amp-img.icons {
+                width: 50px;
+                height: auto;
+                border-radius: 15px;
+            }
+            
+            figure.icons {
+                height: auto;
+                width: 30%;
+                position: relative;
+                z-index: 0;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                text-align: center;
+                } 
+            
+            figure {
+                height: auto;
+                width: 50%;
+                position: relative;
+                z-index: 0;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                text-align: center;
+            }
+            
+            #DIVine {
+                height: auto;
+                width: 99vw;
+                position: relative;
+                z-index: 0;
+                top: 20vw;
+                display: flex;
+                flex-wrap: wrap;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            .hero {
+                height: auto;
+                width: 99vw;
+                position: relative;
+                z-index: 0;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .imggrid {
+                height: auto;
+                width: 100%;
+                position: relative;
+                z-index: 0;
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content: center;
+            } 
+            
+            .icongrid {
+                height: auto;
+                width: auto;
+                position: relative;
+                z-index: 0;
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content: center;
+            } 
+			
+			.donate-ico {
+				width: 15vw;
+				height: 15vw;
+				border-radius: 15px;
+			}
+            
+            .titlebar {
+                height: 50px;
+                position: absolute;
+                z-index: 999;
+                top: 3vw;
+                width: 95vw;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                left: 50%;
+                transform: translateX(-50%);
+                background-color: #0D47A1;
+                color: white;
+                font-size: 20px;
+                border-radius: 15px;
+                margin: auto;
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+            }
+            .bgspheretop {
+                background-color: #20bf55;
+                background-image: linear-gradient(315deg, #20bf55 0%, #01baef 74%);
+                position: absolute;
+                display: block;
+                top: 0px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 100vw;
+                height: 180px;
+                z-index: -1;
+                border-bottom-left-radius: 100% 25%;
+                border-bottom-right-radius: 100% 25%;
+            }
+            .bigbutton {
+                height: auto;
+                z-index: 2;
+                width: 95vw;
+                display: inline-block;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                background-color: #1565C0;
+                font-size: 20px;
+                border-radius: 15px;
+                margin: 7px 0;
+                padding: 3px 0px;
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+            }
+            .smallbutton {
+                height: auto;
+                z-index: 2;
+                width: 100%;
+                display: inline-block;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                background-color: #00BCD4;
+                color: white;
+                font-size: 20px;
+                border-radius: 15px;
+                margin: 7px 0;
+                padding: 16px 0px;
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+            }
+            
+            a.smallbutton {
+            	color: white;
+            }
+            
+            .regular {
+                height: auto;
+                z-index: 1;
+                width: 95vw;
+                display: inline-block;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                font-size: 20px;
+                margin: 5px 0;
+            }
+            
+            @media only screen and (orientation: landscape) {
+                #DIVine {
+                    flex-wrap: nowrap;
+                    top: 10vw;
+                }
+                .hero {
+                    width: 48vw;
+                    padding:0 1vw;
+                }
+				
+				.donate-ico {
+				width: 5vw;
+				height: 5vw;
+				border-radius: 15px;
+				}
+            }
+        </style>
+
+    </head>
+
+    <body>
+
+        <header class="titlebar">
+             <h2>Pixate v0.7</h2>
+        </header>
+
+        <div class="bgspheretop"></div>
+
+        <div id="DIVine">
+            <div class="hero">
+
+                <div class="bigbutton">
+                    	<h3>The Custom Face Program</h3>
+                    	<span>Pixate, custom made for you!</span>
+                    <div class="imggrid">
+
+                        <figure>
+                            <amp-img alt="Custom background" src="https://raw.githubusercontent.com/Duke0404/Duke0404.github.io/master/custombackground.png" width="500" height="500" layout="responsive"></amp-img>
+                            <figcaption>Custom background</figcaption>
+                        </figure>
+
+                        <figure>
+                            <amp-img alt="Tailored to your outfit" src="https://raw.githubusercontent.com/Duke0404/Duke0404.github.io/master/outfitting.png" width="500" height="500" layout="responsive"></amp-img>
+                            <figcaption>Tailored to your outfit</figcaption>
+                        </figure>
+
+                    </div>
+                    <div class="imggrid">
+
+                        <figure>
+                            <amp-img alt="Any font or language" src="https://raw.githubusercontent.com/Duke0404/Duke0404.github.io/master/font.png" width="500px" height="500px" layout="responsive"></amp-img>
+                            <figcaption>Any font or language</figcaption>
+                        </figure>
+
+                        <figure>
+                            <amp-img alt="Custom elements" src="https://raw.githubusercontent.com/Duke0404/Duke0404.github.io/master/customelements.png" width="500px" height="500px" layout="responsive"></amp-img>
+                            <figcaption>Custom elements</figcaption>
+                        </figure>
+
+                    </div>
+                   	<span>To join the Custom Face Program, all you have to do is <a href="#donate" style="color: #0D47A1">donate to the Pixate Project</a>. There is no minimum amount(might change in the future). Pixate is a result of our time and effort and your donations help us stay motivated to improve and create more watchfaces in the future.</span>
+                </div>
+
+                <br/>
+
+                <div class="regular">
+                    	<h3>Future Plans</h3>
+                    <ul>
+                        <li>Purple version</li>
+                        <li>Reduce the size of some elements and unify the big and small font versions.</li>
+                        <li>Weather icon (If possible)</li>
+                        <li>Reposition Battery and Step meter (If Possible)</li>
+                        <li>Other Colors (Suggestions are welcome)</li>
+                        <li>Stable release on <a href="https://amazfitwatchfaces.com" target="_blank">amazfitwatchfaces.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="regular">
+                    	<h3>Changelog</h3>
+                    <ul>
+                        <li>Increased size of clock, date and day of the week(SEPERATE VERSION FOR SMALLER ELEMENTS)(Requested by <a href="https://www.reddit.com/user/Thandor369/" target="_blank" style="color: #FF4301;">u/Thandor369</a> & <a href="https://www.reddit.com/user/spiky_odradek/" target="_blank" style="color: #FF4301;">u/spiky_odradek</a>)</li>
+                        <li>Added DDMM date format version(Requested by <a href="https://www.reddit.com/user/_takerru/" target="_blank" style="color: #FF4301;">u/_takerru</a>, <a href="https://www.reddit.com/user/nicki419/" target="_blank" style="color: #FF4301;">u/nicki419</a> & <a href="https://www.reddit.com/user/Soctrum/" target="_blank" style="color: #FF4301;">u/Soctrum</a>)</li>
+                        <li>Re-introduced and redesigned battery indicator</li>
+                        <li>Redesigned step meter</li>
+                        <li>Re-added day of the week</li>
+                        <li>Improved visibility</li>
+                        <li>Reduced file size of all elements</li>
+                        <li>File hosting moved to mega.nz</li>
+                        <li><a href="https://drive.google.com/open?id=1-wfPmWZZYdHdaQA6dJW_D6agkr-SCXsS" target="_blank">Full Changelog</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="hero">
+                <div class="bigbutton" id="donate">
+                    	<h3>Donate</h3>
+                    	<div class="imggrid">
+                    	
+                    	<figure>
+                            <a href="https://paypal.me/DevanshDas" target="_blank"><img class="donate-ico" alt="Paypal" src="https://raw.githubusercontent.com/Duke0404/Duke0404.github.io/master/paypal.png" width="256" height="256" layout="responsive"></img>
+                            <figcaption style="color: white;">Paypal</figcaption></a>
+                        </figure>
+
+                        <figure>
+                      	  <a href="https://raw.githubusercontent.com/Duke0404/Duke0404.github.io/master/gpayqr.png" target="_blank">
+                            <img class="donate-ico" alt="UPI" src="https://raw.githubusercontent.com/Duke0404/Duke0404.github.io/master/google_pay.png" width="256" height="256" layout="responsive"></img>
+                            <figcaption style="color: white;">UPI</figcaption></a>
+                        </figure>
+
+                  		</div>
+                    	<span>Total Donors: 1</span>
+                    	<br/>
+                    	<span>Thanks a lot <a href="https://www.reddit.com/user/pdthekd/" target="_blank" style="color: #FF4301;">u/pdthekd</a> for motivating me and the team with your contribution. That coffee was delicious .</span>
+                </div>
+
+                <div class="regular">
+                    	<h3>Downloads</h3>
+                    <ul>
+                        <li>Version 0.7</l1>
+                    </ul>
+                    <a href="https://mega.nz/#!TosxzYSb!\_bT1HPprLr-DrzHXAUgQrfxBuY3tyqQsa7jV9MD6JGE"><div class="smallbutton"><text style="color: #0D47A1">Blue BIG font DD/MM</text></div></a>
+                    <a href="https://mega.nz/#!al1zkS4J!KdbgJ5-bBAUFGl1EnxCuQITGfA-EBhPXmsdMHDKBzoM"><div class="smallbutton"><text style="color: #0D47A1">Blue BIG font MM/DD</text></div></a>
+                    <a href="https://mega.nz/#!HokV2aiQ!kaepvZR2rr5seAMsPWVK8U8udxy0\_gR6qEELq1ahGQ8"><div class="smallbutton"><text style="color: #0D47A1">Blue SMALL font DD/MM</text></div></a>
+                    <a href="https://mega.nz/#!Sp0RnaAb!fGxBsqomgITeFPFFR5Ru2A-AfvL68\_V\_L6XepH7qbJM"><div class="smallbutton"><text style="color: #0D47A1">Blue SMALL font MM/DD</text></div></a>
+                    <a href="https://mega.nz/#!Sh9BHCbY!KfsLCkfoQWwxjKi440uUx8M7BhY2bhISvp1L-s3NykI"><div class="smallbutton"><text style="color: #0D47A1">Red BIG font DD/MM</text></div></a>
+                    <a href="https://mega.nz/#!GxtVzIoQ!Hmp4adylHLBady05wtgPXKDfF2w2xl7iO5lHYADr8Ng"><div class="smallbutton"><text style="color: #0D47A1">Red BIG font MM/DD</text></div></a>
+                    <a href="https://mega.nz/#!Cw8xRAjb!y7OAN95cHNqxoCWkzg85bg7EOJ5b\_T36ctOyyhEJmIs"><div class="smallbutton"><text style="color: #0D47A1">Red SMALL font DD/MM</text></div></a>
+                    <a href="https://mega.nz/#!35l3BK4C!zIDSDEvmVsEHQjrMNRujfDjTqJtG-JVXZwrlRHc9r4w"><div class="smallbutton"><text style="color: #0D47A1">Red SMALL font MM/DD</text></div></a>
+                </div>
+
+                <div class="bigbutton">
+                    	<h3>The Pixate Project</h3>
+                    <ul>
+                        <li>Creator: Devansh Das - <a href="https://www.reddit.com/user/Duke0404" target="_blank" style="color: #FF4301;">u/Duke0404</a> <a href="https://www.instagram.com/devanshdas0404/" target="_blank" style="color: #0D47A1">Instagram</a></li>
+                        <li>Contributor: Vilem Zdenek - <a href="https://www.reddit.com/user/FineBroccoli5" target="_blank" style="color: #FF4301;">u/FineBroccoli5</a> <a href="https://www.instagram.com/vilem.zdenek/" target="_blank" style="color: #0D47A1">Instagram</a></li>
+                    </ul>
+                    	<span>To join the Pixate Project, please contact the Creator.</span>
+                    	<br/>
+                </div>
+                
+                <div class="regular">
+               	<span class="fineprint">"Voxel" icons were provided by <a href="https://benasdzimidas.com">Benas Dzimidas</a>. Do not reuse this material without author's permission.</span>
+                </div>
+            </div>
+        </div>
+        <!--
+  CLASSES
+  titlebar: Top bar
+  bigbutton: Buttoned Paragraph
+  smallbutton: Real Buttons
+  regular:Regular Paragraph
+  redditref: Reference from Reddit (color: #FF4301;)
+  imggrid: Single row image grid
+  icons: small icons
+  
+  IDs
+  DIVine: The all encompassing div (and bad pun!)
+  donate: The donate section
+  -->
+    </body>
+
+</html>
+    
