@@ -134,7 +134,7 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
 
             // add this question and its answers to the output
             output.push(
-                '<div class="box2" id="q'+i+'"><div class="question">' + questions[i].question + '</div>'
+                '<div class="box2" id="q'+i+'" style="z-index:'+i+'"><div class="question">' + questions[i].question + '</div>'
                 + '<div class="answers">' + answers.join('') + '</div><a id="next'+i+'" href="#q'+(i+1)+'"><button class="next">Next</button></a></div>'
             );
         }
@@ -168,10 +168,10 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
                 //answerContainers[i].style.color = 'lightgreen';
             }
             // if answer is wrong or blank
-            else{
+            //else{
                 // color the answers red
                 //answerContainers[i].style.color = 'red';
-            }
+            //}
         }
 
         // show number of correct answers out of total
@@ -185,7 +185,13 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
     submitButton.onclick = function(){
         showResults(questions, quizContainer, resultsContainer);
         
-document.getElementById("next9").setAttribute("href", "#final");
+//document.getElementById("next9").setAttribute("href", "/#final");
     }
 
 }
+var zri = (document.getElementById("next"+i+1)
+function zre(zri) {
+	zri.style.z-index = 20+i
+}
+document.getElementById("next9").setAttribute("href", "#final");
+document.getElementByIf("next"+i).onclick = function(){zre(zri);}
