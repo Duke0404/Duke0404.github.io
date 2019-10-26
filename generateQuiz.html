@@ -1,0 +1,117 @@
+<html>
+<head>
+<style>
+.box2 {
+	display: flex;
+	position: sticky;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 100%;
+	height: 100vh;
+	text-align: center;
+	align-items: center;
+	background-color: aqua;
+	margin: 0;
+	
+}
+
+#final {
+	display: flex;
+	position: sticky;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 100%;
+	height: 100vh;
+	text-align: center;
+	align-items: center;
+	background-color: orange;
+	margin: 0;
+}
+
+.next {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	background-color: white;
+	color: black;
+	padding: 20px;
+	margin: 20px;
+	border-radius: 0px;
+	box-shadow: 7px 7px black;
+}
+
+img {
+	width: 40vw;
+	max-width: 100%;
+	height: auto;
+}
+
+#submit {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 100%;
+	height: 80px;
+	text-align: center;
+	align-items: center;
+	background-color: white;
+	border-radius: 0px;
+	box-shadow: 7px 7px black;
+	border: none;
+	margin: 0;
+}
+
+#submit:hover {
+  box-shadow: 3px 3px black;
+}
+
+input[type="radio"] {
+	opacity: 0;
+	position: fixed;
+	width: 0;
+}
+
+label {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	background-color: white;
+	color: black;
+	padding: 20px;
+	margin: 20px;
+	border-radius: 0px;
+	box-shadow: 7px 7px black;
+}
+
+input[type="radio"]:focus + label {
+	box-shadow: 3px 3px black;
+}
+
+label:hover {
+  box-shadow: 3px 3px black;
+}
+
+#results {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	background-color: white;
+}
+</style>
+</head>
+<body>
+<div id="quiz"></div>
+<div id="countdown"></div>
+<div id="final"><button id="submit">Get Results</button>
+<div id="results"></div></div>
+<script src="generateQuiz.js"></script>
+</body>
+</html>
+    
+    
