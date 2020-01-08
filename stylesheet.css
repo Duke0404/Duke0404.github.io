@@ -1,6 +1,5 @@
 body {
     font-family: 'Open Sans',sans-serif;
-    width: 100%;
     display: flex;
     justify-content: center;
     Background-color: white;
@@ -63,15 +62,18 @@ body {
 /*Inventory, Log & Help*/
 .HeaderSmall {
     position: absolute;
-    top: 20px;
+    top: 0;
     padding: 20px;
+    padding-top: 40px;
     font-size: 25px;
-    width: 100%;
+    right: 0;
+    left: 0;
     color: white;
 background: #F4511E;
 background: linear-gradient(to top right, #F4511F, #F41F58);
-Border-radius: 15px;
+Border-radius: 0 0 2px 2px;
     Z-index: 10;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   }
 /*Menu, Home, LogIn & Register*/
   .HeaderBig {
@@ -370,15 +372,16 @@ Border-radius: 15px;
   display: flex;
   flex-direction: row;
   align-items: center;
-left: 0;
+  Justify-content: center;
+  padding: 20px;
 } 
 
 .NavBar {
 Bottom: 15px;
 Top: initial;
 right: initial;
-left: 50%;
-transform: translateX(-50%);
+/*left: 50%;
+transform: translateX(-50%);*/
 }
 
 .NavBarItem {
@@ -386,6 +389,7 @@ transform: translateX(-50%);
    }
    
 #MasterInventory {
+				 margin-top: 80px;
      margin-bottom: 70px;
      }
     }
