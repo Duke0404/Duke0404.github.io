@@ -1,0 +1,391 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    Background-color: white;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  /*Inventory*/
+  #MasterInventory {
+    display: flex;
+    Margin-top: 100px;
+    justify-content: center;
+    Flex-direction: row;
+    Flex-wrap: wrap;
+    Z-index: 1;
+  }
+
+  /*Log & Help*/
+  #MasterLog {
+    display: flex;
+    Margin-top: 100px;
+    Align-items: center;
+    Flex-direction: column;
+    Z-index: 1;
+  }
+
+  /*Menu & Home*/
+  #MainCardMenu {
+    display: flex;
+    Align-items: center;
+    Justify-content: center;
+    Flex-direction: column;
+    height: 55vh;
+    width: 53vw;
+    Z-index: 1;
+    background-color: white;
+    border-radius: 30px;
+    padding: 100px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+
+  /*LogIn & Register*/
+  #MainCardRegister {
+    display: flex;
+    Align-items: center;
+    Justify-content: center;
+    Flex-direction: row;
+    height: 55vh;
+    width: 53vw;
+    Z-index: 1;
+    background-color: white;
+    border-radius: 30px;
+    padding: 100px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+/*Inventory, Log & Help*/
+.HeaderSmall {
+    position: absolute;
+    top: 20px;
+    padding: 20px;
+    width: 100vw;
+    font-size: 25px;
+    color: white;
+background: #F4511E;
+background: linear-gradient(to top right, #F4511F, #F41F58);
+Border-radius: 15px;
+    Z-index: 10;
+  }
+/*Menu, Home, LogIn & Register*/
+  .HeaderBig {
+    Display: flex;
+    Align-items: center;
+    Justify-content: center;
+    Flex-direction: column;
+    font-size: 25px;
+    color: #f4511e;
+    width: 50vw;
+    margin: 5vw;
+    Z-index: 10;
+  }
+
+  /*Inventory, Log & Help*/
+  .AppTitleSmall {
+    font-family: 'Lobster', cursive;
+    Margin-right: 20px;
+  }
+
+  /*Menu, Home, LogIn & Register*/
+  .AppTitleBig {
+    font-family: 'Lobster', cursive;
+    font-size: 100px;
+  }
+
+  .HeaderText {
+    Margin-left: 20px;
+  }
+
+  .HeaderInfo {
+    font-family: 'Lobster', cursive;
+  }
+
+  .NavBar {
+    position: fixed;
+    display: flex;
+    Align-items: center;
+    Justify-content: center;
+    Top: 30px;
+    Right: 30px;
+    Flex-direction: row;
+    Padding: 0px;
+    Border-radius: 500px;
+    Background-color: white;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    Z-index: 11;
+
+  }
+
+  .NavBarItem {
+    Display: flex;
+    Align-items: center;
+    Justify-content: center;
+    padding: 15px 30px;
+    Border-radius: 500px;
+    background-position: center;
+    transition: background 0.1s;
+  }
+
+  .NavBarCurrent {
+    Color: white;
+    background: #F4511E;
+    background: linear-gradient(to top right, #F4511F, #F41F58);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  }
+
+  .NavBarOther:hover {
+    background: #FF8A65 radial-gradient(circle, transparent 1%, #FF8A65 1%) center/15000%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  }
+
+  .NavBarOther:active {
+    background-color: #FFB300;
+    background-size: 100%;
+    transition: background 0s;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  }
+
+  .InventoryCard {
+    Position: relative;
+    Display: flex;
+    Flex-direction: column;
+    Padding: 40px;
+    Margin: 10px;
+    Align-items: center;
+    Justify-content: center;
+    height: 320px;
+    Width: 180px;
+    Background-color: white;
+    Border-radius: 15px;
+    Z-index: 5;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  }
+
+  .LogCard {
+    Position: relative;
+    Display: flex;
+    flex-direction: row;
+    Padding: 40px;
+    Margin: 10px;
+    Align-items: center;
+    height: 100px;
+    Width: 89vw;
+    Background-color: white;
+    Border-radius: 15px;
+    Z-index: 5;
+    overflow: scroll;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  }
+
+  .CardInfo {
+    margin-right: 5vw;
+  }
+
+  .InputOutput {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 10px;
+    height: 90%;
+    width: 20%;
+    color: white;
+    border-radius: 10px;
+  }
+
+  .Input {
+    background-color: #1EC2F4;
+  }
+
+  .Output {
+    background-color: #F4511E;
+  }
+
+  .CardAction {
+    Position: absolute;
+    Display: flex;
+    Width: 90%;
+    Align-items: center;
+    Justify-content: center;
+    Bottom: 40px;
+    Color: white;
+    Z-index: 3;
+  }
+
+
+
+  .AddAndSubtractSection {
+    Position: absolute;
+    Display: flex;
+    background: #F4511E;
+    background: linear-gradient(to top right, #F4511F, #F41F58);
+    Border-radius: 50px;
+    Flex-direction: row;    
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    Right: 0px;
+  }
+
+  .AddSection,
+  .SubtractSection,
+  .DeleteSection {
+    display: flex;
+    Align-items: center;
+    Justify-content: center;
+    padding: 10px 10px;
+    Color: white;
+    border: none;
+    margin: 0 0px;
+    Border-radius: 50px;
+    Z-index: 9;
+    background-position: center;
+    transition: background 0.8s;
+  }
+
+  .DeleteOverSection {
+    Position: absolute;
+    Display: flex;
+    Flex-direction: row;
+    Left: 0px;
+  }
+  
+  .DeleteSection {background-color: black}
+
+  .AddSection:hover,
+  .SubtractSection:hover,
+  .DeleteSection:hover {
+    background: #FF8A65 radial-gradient(circle, transparent 1%, #FF8A65 1%) center/15000%;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    Z-index: 10;
+  }
+
+  .AddSection:active,
+  .SubtractSection:active,
+  .DeleteSection:active {
+    background-color: #FFB300;
+    background-size: 100%;
+    transition: background 0s;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  }
+
+  label {
+    display: flex;
+    Justify-content: center;
+    Align-items: center;
+    Margin-right: 10px;
+  }
+
+  input[type=text] {
+    display: flex;
+    background-color: white;
+    padding: 5px 10px;
+    margin: 5px 5px;
+    border: solid 1px;
+    border-color: #BDBDBD;
+    border-radius: 500px;
+    Width: 70%;
+  }
+
+
+  input[type=text]:focus {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    border-color: white;
+  }
+
+  .SubmitButton:hover {
+    background: #FF8A65 radial-gradient(circle, transparent 1%, #FF8A65 1%) center/15000%;
+    box-shadow: 0 7px 14px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
+  }
+
+  .SubmitButton:active {
+    background-color: #FFB300;
+    background-size: 100%;
+    transition: background 0s;
+    box-shadow: 0 7px 14px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
+  }
+
+  .FormRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0px;
+    justify-content: center;
+  }
+
+  .SubmitButton {
+    Position: absolute;
+    Bottom: 20px;
+    display: flex;
+    Align-items: center;
+    Justify-content: center;
+    padding: 15px 30px;
+    margin-top: 10px;
+    Color: white;
+    background: #F4511E;
+    background: linear-gradient(to top right, #F4511F, #F41F58);
+    border: none;
+    Border-radius: 50px;
+    Z-index: 9;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    background-position: center;
+    transition: background 0.8s;
+  }
+
+  .SubmitButton:hover {
+    background: #FF8A65 radial-gradient(circle, transparent 1%, #FF8A65 1%) center/15000%;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  }
+
+  .SubmitButton:active {
+    background-color: #FFB300;
+    background-size: 100%;
+    transition: background 0s;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  }
+
+  .ItemName {
+    Font-weight: bold;
+    Font-size: 30px;
+  }
+
+  .ItemQuantity {
+    display: flex;
+    background-color: white;
+    padding: 5px 10px;
+    border: solid 1px;
+    border-color: #BDBDBD;
+    border-radius: 15px;
+  }
+
+  
+
+
+  @media (max-width: 991px), (orientation: portrait) {
+    .HeaderSmall {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+/*left: 50%;
+transform: translateX(-50%);*/
+} 
+
+.NavBar {
+Bottom: 15px;
+Top: initial;
+Right: initial;
+left: 50%;
+transform: translateX(-50%);
+}
+
+.NavBarItem {
+   padding: 15px 6vw;
+   }
+   
+#MasterInventory {
+     margin-bottom: 70px;
+     }
+    }
