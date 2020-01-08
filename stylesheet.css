@@ -1,5 +1,6 @@
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans',sans-serif;
+    width: 100%;
     display: flex;
     justify-content: center;
     Background-color: white;
@@ -64,8 +65,8 @@ body {
     position: absolute;
     top: 20px;
     padding: 20px;
-    width: 100vw;
     font-size: 25px;
+    width: 100%;
     color: white;
 background: #F4511E;
 background: linear-gradient(to top right, #F4511F, #F41F58);
@@ -369,14 +370,13 @@ Border-radius: 15px;
   display: flex;
   flex-direction: row;
   align-items: center;
-/*left: 50%;
-transform: translateX(-50%);*/
+left: 0;
 } 
 
 .NavBar {
 Bottom: 15px;
 Top: initial;
-Right: initial;
+right: initial;
 left: 50%;
 transform: translateX(-50%);
 }
