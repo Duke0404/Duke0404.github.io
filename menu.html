@@ -1,0 +1,48 @@
+<html>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+        
+</head>
+
+<body class="CardBackground">
+
+    <div id="MainCard">
+
+        <div class="MenuContainer">
+            <a href="{% url 'invent-inventory' %}">
+                <div class="MenuButton">
+                    <i class="material-icons">view_module</i> Inventory
+                </div></a>
+                   <a href="{% url 'invent-log' %}">
+                <div class="MenuButton">
+                    <i class="material-icons">view_stream</i> Logs
+                </div></a>
+                   <a href="{% url 'invent-help' %}"> 
+                <div class="MenuButton">
+                    <i class="material-icons">help</i> Help 
+                </div></a>
+                    <a href="{% url 'logout' %}}"> 
+                <div class="MenuButton">
+                    <i class="material-icons">account_circle</i> LogOut
+                </div></a>
+                <a href="{% url 'setting' %}}"> 
+                    <div class="MenuButton">
+                        <i class="material-icons">settings</i> Settings
+                    </div></a>                 
+
+        </div>
+
+        <div class="HeaderBig">
+            <span class="AppTitleBig">Invent</span>
+            <span class="HeaderInfo">Inventory Management Solution</span>
+        </div>
+    </div>
+
+</body>
+
+</html>

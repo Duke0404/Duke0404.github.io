@@ -4,6 +4,13 @@ body {
     justify-content: center;
     Background-color: white;
   }
+  
+ .CardBackground {
+            Align-items: center;
+            background: #F4511E;
+            background: linear-gradient(to top right, #F4511F, #F41F58);
+            Flex-direction: column;
+        }
 
   a {
     text-decoration: none;
@@ -29,7 +36,7 @@ body {
     Z-index: 1;
   }
 
-  /*Menu & Home*/
+  /*Menu & Home
   #MainCardMenu {
     display: flex;
     Align-items: center;
@@ -42,10 +49,10 @@ body {
     border-radius: 30px;
     padding: 100px;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-  }
+  }*/
 
   /*LogIn & Register*/
-  #MainCardRegister {
+  #MainCard {
     display: flex;
     Align-items: center;
     Justify-content: center;
@@ -69,9 +76,9 @@ body {
     right: 0;
     left: 0;
     color: white;
-background: #F4511E;
-background: linear-gradient(to top right, #F4511F, #F41F58);
-Border-radius: 0 0 2px 2px;
+    background: #F4511E;
+    background: linear-gradient(to top right, #F4511F, #F41F58);
+    Border-radius: 0 0 2px 2px;
     Z-index: 10;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   }
@@ -364,7 +371,33 @@ Border-radius: 0 0 2px 2px;
     border-radius: 15px;
   }
 
-  
+  .MenuButton {
+            Display: flex;
+            Padding: 15px 30px;
+            Margin-top: 10px;
+            Align-items: center;
+            Justify-content: left;
+            Color: white;
+            background: #F4511E;
+            background: linear-gradient(to top right, #F4511F, #F41F58);
+            Border-radius: 50px;
+            Z-index: 5;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+            background-position: center;
+            transition: background 0.8s;
+        }
+
+        .MenuButton:hover {
+            background: #FF8A65 radial-gradient(circle, transparent 1%, #FF8A65 1%) center/15000%;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+        }
+
+        .MenuButton:active {
+            background-color: #FFB300;
+            background-size: 100%;
+            transition: background 0s;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+        }
 
 
   @media (max-width: 991px), (orientation: portrait) {
@@ -392,4 +425,37 @@ transform: translateX(-50%);*/
 				 margin-top: 80px;
      margin-bottom: 70px;
      }
+     
+.CardBackground {
+				background: white;
+				}
+#MainCard {
+				position: fixed;
+				height: initial;
+				width: initial;
+				flex-direction: column-reverse;
+				justify-content: flex-start;
+				align-items: center;
+				border-radius: 0;
+				right: 0;
+				left: 0;
+				top: 0;
+				bottom: 0;
+				}
+				
+.HeaderBig {
+				position: absolute;
+				color: white;
+				background: #F4511E;
+				background: linear-gradient(to top right, #F4511F, #F41F58);
+				Border-radius: 0 0 2px 2px;
+				Z-index: 10;
+				margin: 0;
+				padding-bottom: 30px;
+				width: initial;
+				right: 0;
+				left: 0;
+				top: 0;
+				box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+				}
     }

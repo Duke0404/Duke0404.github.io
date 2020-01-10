@@ -1,0 +1,84 @@
+<html>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"> 
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lobster&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+
+<body>
+  <div class="HeaderSmall">
+    <span class="AppTitleSmall">Invent</span>|
+    <span class="HeaderText">{{user.first_name}}</span>
+  </div>
+  <div class="NavBar">
+    <a href="{% url 'invent-menu' %}">
+      <div class="NavBarMenu NavBarItem NavBarOther">
+        <i class="material-icons">more_horiz</i> Menu
+      </div>
+    </a>
+    <a href="{% url 'invent-inventory' %}">
+      <div class="NavbarInventory NavBarItem NavBarOther">
+        <i class="material-icons">view_module</i> Inventory
+      </div>
+    </a>
+    <div class="NavBarLog NavBarItem NavBarCurrent">
+      <i class="material-icons">view_stream</i> Logs
+    </div>
+  </div>
+
+  <div id="MasterLog">
+    <!--{% for legger in leggers %}
+      {% if legger.action == '+' %}-->
+    <div class="LogCard">
+      <div class="ItemName CardInfo">
+        {{legger.name}}
+      </div>
+      <div class="ItemCode CardInfo">
+        # {{legger.item_code}}
+      </div>
+      <div class="ItemPrice CardInfo">
+        &#8377; {{legger.price}}
+      </div>
+      <div class="ItemQuantity CardInfo">
+        {{legger.quantity}}
+      </div>
+      <div class="ItemDate CardInfo">
+      	date
+      </div>
+      <div class="InputOutput Input">
+        <i class="material-icons">add</i>
+      </div>
+    </div>
+      <!--{% elif legger.action == '-' %}-->
+    <div class="LogCard">
+      <div class="ItemName CardInfo">
+        {{legger.name}}
+      </div>
+      <div class="ItemCode CardInfo">
+        # {{legger.item_code}}
+      </div>
+      <div class="ItemPrice CardInfo">
+        &#8377; {{legger.price}}
+      </div>
+      <div class="ItemQuantity CardInfo">
+        {{legger.quantity}}
+      </div>
+      <div class="ItemDate CardInfo">
+      	date
+      </div>
+      <div class="InputOutput Output">
+        <i class="material-icons">remove</i>
+      </div>
+    </div>
+      <!--{% endif %}
+    {% endfor %}-->
+
+  </div>
+  </div>
+
+</body>
+
+</html>
