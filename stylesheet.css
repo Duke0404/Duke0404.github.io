@@ -451,7 +451,8 @@ transform: translateX(-50%);*/
 				Border-radius: 0 0 2px 2px;
 				Z-index: 10;
 				margin: 0;
-				padding-bottom: 30px;
+				padding-top: 6vh;
+				padding-bottom: 6vh;
 				width: initial;
 				right: 0;
 				left: 0;
