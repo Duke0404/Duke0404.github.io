@@ -1,0 +1,229 @@
+<html><head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Lobster&amp;display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&amp;display=swap" rel="stylesheet"> 
+    <style>
+  
+  .QuestionAndAnswer {
+      display: flex;
+      flex-direction: column;
+      margin: 10px 0px;
+  }
+
+  .Question {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+  }
+
+  .Answer {
+    display: flex;
+    align-items: center;
+  }
+
+  #Master {
+    display: flex;
+    Margin-top: 100px;
+    padding-left: 30px;
+    Flex-direction: column;
+    Z-index: 1;
+  }
+  
+  .Header {
+    position: absolute;
+    top: 20px;
+    padding: 20px;
+    font-size: 25px;
+    color: #F4511E;
+    border-radius: 10px;
+    width: 93vw;
+    Z-index: 10;
+  }
+  
+  .AppTitle {
+    font-family: 'Lobster', cursive;
+    Margin-right: 20px;
+  }
+  
+  .HeaderText {
+    Margin-left: 20px;
+  }
+  
+  .HeaderInfo {
+  }
+  
+  .InputOutput .material-icons {
+      font-size: 35px;
+  }
+  
+  .NewButton {
+    position: fixed;
+    display: flex;
+    Align-items: center;
+    Justify-content: center;
+    bottom: 20px;
+    right: 20px;
+    height: 70px;
+    width: 70px;
+    Color: white;
+    Font-size: 35px;
+    Background-color: #F4511E;
+    Border-radius: 50px;
+    Z-index: 9;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    background-position: center;
+    transition: background 0.8s;
+  }
+  .NewButton:hover {
+    background: #FF8A65 radial-gradient(circle, transparent 1%, #FF8A65 1%) center/15000%;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+  .NewButton:active {
+    background-color: #FFB300;
+    background-size: 100%;
+    transition: background 0s;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+  
+  .NavBar {
+    position: fixed;
+    display: flex;
+    Align-items: center;
+    Justify-content: center;
+    Top: 30px;
+    Right: 30px;
+    Flex-direction: row;
+    Padding: 0px;
+    Border-radius: 50px;
+    Background-color: white;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    Z-index: 11;
+    
+  }
+  
+  .NavBarItem {
+    Display: flex;
+    Align-items: center;
+    Justify-content: center;
+    Padding: 15px 30px;
+    Border-radius: 50px;
+    background-position: center;
+    transition: background 0.1s;
+  }
+  
+  .NavBarMenu:hover {
+    background: #FF8A65 radial-gradient(circle, transparent 1%, #FF8A65 1%) center/15000%;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  }
+  
+  .NavBarMenu:active {
+    background-color: #FFB300;
+    background-size: 100%;
+    transition: background 0s;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  }
+  
+  .NavBarInventory:hover {
+    background: #FF8A65 radial-gradient(circle, transparent 1%, #FF8A65 1%) center/15000%;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  }
+  
+  .NavBarInventory:active {
+    background-color: #FFB300;
+    background-size: 100%;
+    transition: background 0s;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  }
+
+  .NavBarLog:hover {
+    background: #FF8A65 radial-gradient(circle, transparent 1%, #FF8A65 1%) center/15000%;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  }
+  
+  .NavBarLog:active {
+    background-color: #FFB300;
+    background-size: 100%;
+    transition: background 0s;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  }
+  
+  .EntryCard {
+    Position: relative;
+    Display: flex;
+    flex-direction: row;
+    Padding: 40px;
+    Margin: 10px;
+    Align-items: center;
+    height: 100px;
+    Width: 89vw;
+    Background-color: white;
+    Border-radius: 15px;
+    Z-index: 5;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  }
+  
+  .CardInfo {
+      margin-right: 18vw;
+  }
+  
+  .InputOutput {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      right: 10px;
+      height: 90%;
+      width: 20%;
+      color: white;
+      border-radius: 10px;
+  }
+  
+  .Input {
+      background-color: #1EC2F4;
+  }
+  
+  .Output {
+      background-color: #F4511E;
+  }
+    </style>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+   </head> 
+   <body> 
+    <div class="HeaderSmall"> 
+     <span class="AppTitleSmall">Invent</span>| 
+     <span class="HeaderText">{{user.first_name}}</span> 
+    </div> 
+    <div class="NavBar"> 
+      <a href="{% url 'invent-menu' %}"><div class="NavBarMenu NavBarItem NavBarOther"> 
+       <i class="material-icons">more_horiz</i> Menu 
+      </div></a>
+      <a href="{% url 'invent-inventory' %}"><div class="NavbarInventory NavBarItem NavBarOther"> 
+       <i class="material-icons">view_module</i> Inventory 
+      </div></a>
+      <a href="{% url 'invent-log' %}"><div class="NavBarLog NavBarItem NavBarOther"> 
+       <i class="material-icons">view_stream</i> Logs 
+      </div></a>
+    </div> 
+    <div id="Master">
+        <div class="QuestionAndAnswer">
+            <span class="Question">Q: What can Invent do?</span>
+            <span class+"Answer">A: Invent can maintain a record of a company's inventory as well as log every transaction made on it.</span>
+        </div>
+        <div class="QuestionAndAnswer">
+            <span class="Question">Q: How to switch between different pages?</span>
+            <span class+"Answer">A: You can navigate within Invent using the Navigation Bar on the Top Right or from the <i class="material-icons">more_horiz</i> Main Menu.</span>
+        </div>
+        <div class="QuestionAndAnswer">
+            <span class="Question">Q: How to make a transaction?</span>
+            <span class="Answer">A: transactions can be made from the <i class="material-icons">view_module</i> Inventory page</span>
+            <span class="Answer"><i class="material-icons">keyboard_arrow_right</i> To add or remove any amount of an item simply edit it's quantity.</span>
+            <span class="Answer"><i class="material-icons">keyboard_arrow_right</i> To add a new item, add it's details to the New Item card at the end</span>
+        </div>
+        <div class="QuestionAndAnswer">
+            <span class="Question">Q: How to differentiate between input and output in the <i class="material-icons">view_stream</i> Logs?</span>
+            <span class+"Answer">A: <i class="material-icons">add_circle</i> Input | <i class="material-icons">remove_circle</i> Output</span>
+        </div>
+        </div>
+  </body></html>

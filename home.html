@@ -1,0 +1,257 @@
+<html><head> 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Lobster&amp;display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&amp;display=swap" rel="stylesheet"> 
+   <style type="text/css" id="dcoder_stylesheet">body {
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    Align-items: center;
+    justify-content: center;
+    Background-color: #F4511E;
+    Flex-direction: column;
+  }
+  
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  #master {
+    display: flex;
+    Align-items: center;
+    Justify-content: center;
+    Flex-direction: column;
+    height: 55vh;
+    width: 53vw;
+    Z-index: 1;
+    background-color: white;
+    border-radius: 30px;
+    padding: 100px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+  
+  .Header {
+    Display: flex;
+    Align-items: center;
+    Justify-content: center;
+    Flex-direction: column;
+    font-size: 25px;
+    color: #F4511E;
+    border-radius: 10px;
+    width: 50vw;
+    Margin-bottom: 5vw;
+    Z-index: 10;
+  }
+  
+  .AppTitle {
+    font-family: 'Lobster', cursive;
+    font-size: 100px;
+  }
+  
+  .HeaderText {
+    Margin-left: 20px;
+  }
+  
+  .HeaderInfo {
+    font-family: 'Lobster', cursive;
+  }
+  
+  .MenuButton {
+    Position: relative;
+    Display: flex;
+    Padding: 40px;
+    Margin: 10px;
+    Align-items: center;
+    Justify-content: center;
+    height: 20px;
+    Width: 20vw;
+    Background-color: white;
+    Border-radius: 15px;
+    Z-index: 5;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    background-position: center;
+    transition: background 0.1s;
+  }
+  .MenuButton:hover {
+    background: #FF8A65 radial-gradient(circle, transparent 1%, #FF8A65 1%) center/15000%;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  }
+  .MenuButton:active {
+    background-color: #FFB300;
+    background-size: 100%;
+    transition: background 0s;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  }
+  
+  #MenuComplete {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .MenuExtra {
+    display: flex;
+    Align-items: center;
+    Justify-content: center;
+    Flex-direction: row;
+    Padding: 0px;
+    Border-radius: 50px;
+    Background-color: white;
+    border: solid 1px;
+    border-color: #BDBDBD;
+    margin: 10px;
+    Z-index: 6;
+    
+  }
+  
+  .MenuExtraItem {
+    Display: flex;
+    Align-items: center;
+    Justify-content: center;
+    Padding: 15px 30px;
+    Border-radius: 50px;
+    background-position: center;
+    transition: background 0.8s;
+  }
+  
+  .MenuExtraItem:hover {
+    background: #FF8A65 radial-gradient(circle, transparent 1%, #FF8A65 1%) center/15000%;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  }
+  
+  .MenuExtraItem:active {
+    background-color: #FFB300;
+    background-size: 100%;
+    transition: background 0s;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  }
+  
+  .NavBar {
+    display: flex;
+    Align-items: center;
+    Justify-content: center;
+    Flex-direction: row;
+    Padding: 0px;
+    Border-radius: 50px;
+    Background-color: white;
+    border: solid 1px;
+    border-color: #BDBDBD;
+    margin: 10px;
+    Z-index: 6;
+    
+  }
+  
+  .NavBarItem {
+    Display: flex;
+    Align-items: center;
+    Justify-content: center;
+    Padding: 15px 30px;
+    Border-radius: 50px;
+    background-position: center;
+    transition: background 0.8s;
+  }
+  
+  .NavBarLog:hover {
+    background: #FF8A65 radial-gradient(circle, transparent 1%, #FF8A65 1%) center/15000%;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  }
+  
+  .NavBarLog:active {
+    background-color: #FFB300;
+    background-size: 100%;
+    transition: background 0s;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  }
+  
+  .NavBarInventory:hover {
+    background: #FF8A65 radial-gradient(circle, transparent 1%, #FF8A65 1%) center/15000%;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  }
+  
+  .NavBarInventory:active {
+    background-color: #FFB300;
+    background-size: 100%;
+    transition: background 0s;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  }
+  
+  .NavBarMenu {
+    Color: white;
+    Background-color: #F4511E;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+  
+  .DarkTriangle {
+    Fill: #F4511E;
+  }
+  
+  .LightTriangle {
+    Fill: #FFB300;
+  }
+  
+  .UpperTriangle {
+    Position: fixed;
+    Bottom: 0px;
+    Right: 40vw;
+    Z-index: 2;
+  }
+  
+  .LowerTriangle {
+    Position: fixed;
+    Bottom: -30px;
+    Right: 38vw;
+    Z-index: 1;
+  
+  }
+  
+  </style></head> 
+   <body> 
+    <div id="Master">
+      <div class="Header"> 
+        <span class="AppTitle">Invent</span> 
+        <span class="HeaderInfo">Inventory Management Solution</span> 
+       </div> 
+      
+       <div id="MenuComplete">
+      <div class="MenuExtra">
+        <a href="{% url 'login' %}"><div class="MenuExtraHelp MenuExtraItem">
+          <i class="material-icons">account_circle</i> Log-In
+        </div></a>
+      </div>
+  
+        
+       <div class="MenuExtra">
+        <a href="{% url 'register' %}"> <div class="MenuExtraLogOut MenuExtraItem">
+          <i class="material-icons">create</i> Register
+        </div></a>
+      </div>
+  
+       </div>
+  <!--
+       <a href="{% url 'invent-inventory' %}">
+     <div class="MenuButton">
+       Inventory
+     </div></a>
+        <a href="{% url 'invent-log' %}">
+     <div class="MenuButton">
+       Log 
+     </div></a>
+        <a href="{% url 'invent-help' %}"> 
+     <div class="MenuButton">
+       Help 
+     </div></a> 
+    </div>
+    <div class="UpperTriangle"> 
+     <svg height="210" width="400">
+       &nbsp; 
+      <polygon class="DarkTriangle" points="200,10 250,10 250,60 -150,500 -250,500" /> 
+     </svg> 
+    </div> 
+    <div class="LowerTriangle"> 
+     <svg height="210" width="400"> 
+      <polygon class="LightTriangle" points="200,10 250,10 250,60 -150,500 -250,500" /> 
+     </svg> 
+    </div>-->
+   
+  </body></html>

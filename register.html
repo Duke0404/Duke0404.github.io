@@ -1,0 +1,236 @@
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&amp;display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            display: flex;
+            Align-items: center;
+            justify-content: center;
+            Background-color: #F4511E;
+            Flex-direction: column;
+        }
+
+        #master {
+            display: flex;
+            Align-items: center;
+            Justify-content: center;
+            Flex-direction: row;
+            Z-index: 1;
+            background-color: white;
+            border-radius: 30px;
+            padding: 100px;
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+        }
+
+        .Header {
+            Display: flex;
+            Align-items: center;
+            Justify-content: center;
+            Flex-direction: column;
+            font-size: 25px;
+            color: #F4511E;
+            margin: 5vw;
+            Z-index: 10;
+        }
+
+        .AppTitle {
+            font-family: 'Lobster', cursive;
+            font-size: 100px;
+        }
+
+        .HeaderText {
+            Margin-left: 20px;
+        }
+
+        .HeaderInfo {
+            font-family: 'Lobster', cursive;
+        }
+
+        .NewButton {
+            position: fixed;
+            display: flex;
+            Align-items: center;
+            Justify-content: center;
+            bottom: 20px;
+            right: 20px;
+            height: 70px;
+            width: 70px;
+            Color: white;
+            Font-size: 35px;
+            Background-color: #F4511E;
+            Border-radius: 50px;
+            Z-index: 9;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+            background-position: center;
+            transition: background 0.8s;
+        }
+
+        .NewButton:hover {
+            background: #FF8A65 radial-gradient(circle, transparent 1%, #FF8A65 1%) center/15000%;
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+        }
+
+        .NewButton:active {
+            background-color: #FFB300;
+            background-size: 100%;
+            transition: background 0s;
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .EntryCard {
+            Position: relative;
+            Display: flex;
+            Padding: 40px;
+            Margin: 10px;
+            Align-items: center;
+            height: 100px;
+            Width: 89vw;
+            Background-color: white;
+            Border-radius: 15px;
+            Z-index: 5;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+        }
+
+        .MenuButton {
+            Position: relative;
+            Display: flex;
+            Padding: 40px;
+            Margin: 10px;
+            Align-items: center;
+            Justify-content: center;
+            height: 20px;
+            Width: 20vw;
+            Background-color: white;
+            Border-radius: 15px;
+            Z-index: 5;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+            background-position: center;
+            transition: background 0.8s;
+        }
+
+        .MenuButton:hover {
+            background: #FF8A65 radial-gradient(circle, transparent 1%, #FF8A65 1%) center/15000%;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+        }
+
+        .MenuButton:active {
+            background-color: #FFB300;
+            background-size: 100%;
+            transition: background 0s;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        label {
+            padding: 0px 5px;
+        }
+
+        input {
+            display: flex;
+            background-color: white;
+            padding: 10px 20px;
+            margin: 10px;
+            border: solid 1px;
+            border-color: #BDBDBD;
+            border-radius: 500px;
+        }
+
+        input:focus {
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+            border-color: white;
+        }
+
+        .FormRow {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .SubmitButton {
+            display: flex;
+            Align-items: center;
+            Justify-content: center;
+            padding: 15px 30px;
+            margin-top: 10px;
+            Color: white;
+            Background-color: #F4511E;
+            border: none;
+            Border-radius: 50px;
+            Z-index: 9;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+            background-position: center;
+            transition: background 0.8s;
+        }
+
+        .SubmitButton:hover {
+            background: #FF8A65 radial-gradient(circle, transparent 1%, #FF8A65 1%) center/15000%;
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+        }
+
+        .SubmitButton:active {
+            background-color: #FFB300;
+            background-size: 100%;
+            transition: background 0s;
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="master">
+        <form action='register' method="post">
+        {% csrf_token %}
+            <div class="FormRow">
+                <label for="CompanyId"><i class="material-icons">person</i></label>
+                <input type="text" name="CompanyId" placeholder="User ID" required />
+            </div>
+            <div class="FormRow">
+                <label for="CompanyName"><i class="material-icons">business</i></label>
+                <input type="text" name="CompanyName" placeholder="Company" required />
+            </div>
+            <div class="FormRow">
+                <label for="CompanyAddress"><i class="material-icons">navigation</i></label>
+                <input type="text" name="CompanyAddress" placeholder="Address" />
+            </div>
+            <div class="FormRow">
+                <label for="CompanyContact"><i class="material-icons">phone</i></label>
+                <input type="number" name="CompanyContact" placeholder="Contact" />
+            </div>
+            <div class="FormRow">
+                <label for="CompanyWebsite"><i class="material-icons">web</i></label>
+                <input type="url" name="CompanyWebsite" placeholder="Website" />
+            </div>
+            <div class="FormRow">
+                <label for="Password"><i class="material-icons">enhanced_encryption</i></label>
+                <input type="password" name="Password" placeholder="Password" required />
+            </div>
+            <button type="submit" class="SubmitButton">Submit</button>
+        </form>
+        <!--<a href="Menu.html"> 
+          <div class="MenuButton">
+            Next 
+          </div></a>-->
+        <div class="Header">
+            <span class="AppTitle">Invent</span>
+            <span class="HeaderInfo">Inventory Management Solution</span>
+        </div>
+    </div>
+
+</body>
+
+</html>
