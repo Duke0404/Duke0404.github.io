@@ -1,13 +1,25 @@
 [
   {
-    "name": "Polywalls11",
-    "author": "Duke",
-    "url": "https://raw.githubusercontent.com/Duke0404/DukeDesign-Wallpapers/master/PolyWalls11.jpg"
-  },
-  {
-    "name": "RedFlower",
+    "name": "Red Flower",
     "author": "Tyler Lastovich",
     "url": "https://raw.githubusercontent.com/Duke0404/DukeDesign-Wallpapers/master/RedFlower.jpg",
     "thumbUrl": "https://raw.githubusercontent.com/Duke0404/DukeDesign-Wallpapers/master/Thumb-RedFlower.jpg"
+  },
+  {
+    "name": "Half Moon",
+    "author": "Kush Kaushik",
+    "url": "https://raw.githubusercontent.com/Duke0404/DukeDesign-Wallpapers/master/HalfMoon.jpg",
+    "thumbUrl": "https://raw.githubusercontent.com/Duke0404/DukeDesign-Wallpapers/master/Thumb-HalfMoon.jpg"
+  },
+  {
+    "name": "White & Black Floral Textile",
+    "author": "Henry & Co",
+    "url": "https://raw.githubusercontent.com/Duke0404/DukeDesign-Wallpapers/master/WhiteAndBlackFloralTextile.jpg",
+    "thumbUrl": "https://raw.githubusercontent.com/Duke0404/DukeDesign-Wallpapers/master/Thumb-WhiteAndBlackFloralTextile.jpg"
+  },
+  {
+    "name": "Polywalls11",
+    "author": "Duke",
+    "url": "https://raw.githubusercontent.com/Duke0404/DukeDesign-Wallpapers/master/PolyWalls11.jpg"
   }
 ]
