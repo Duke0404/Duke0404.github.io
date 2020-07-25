@@ -20,24 +20,6 @@
     "url": "https://raw.githubusercontent.com/Duke0404/DukeDesign-Wallpapers/master/Polywalls16-ALT3.jpeg"
   },
   {
-    "name": "Matchwalls3",
-    "author": "Duke",
-    "url": "https://raw.githubusercontent.com/Duke0404/DukeDesign-Wallpapers/master/MatchWalls3.jpg",
-    "thumbUrl": "https://raw.githubusercontent.com/Duke0404/DukeDesign-Wallpapers/master/Thumb-MatchWalls3.jpg"
-  },
-  {
-    "name": "Matchwalls3",
-    "author": "Duke",
-    "url": "https://raw.githubusercontent.com/Duke0404/DukeDesign-Wallpapers/master/MatchWalls3-ALT2.jpg",
-    "thumbUrl": "https://raw.githubusercontent.com/Duke0404/DukeDesign-Wallpapers/master/Thumb-MatchWalls3-ALT2.jpg"
-  },
-  {
-    "name": "Matchwalls3",
-    "author": "Duke",
-    "url": "https://raw.githubusercontent.com/Duke0404/DukeDesign-Wallpapers/master/MatchWalls3-ALT3.jpg",
-    "thumbUrl": "https://raw.githubusercontent.com/Duke0404/DukeDesign-Wallpapers/master/Thumb-MatchWalls3-ALT3.jpg"
-  },
-  {
     "name": "Hong Kong",
     "author": "Hugo D.",
     "url": "https://images.unsplash.com/photo-1591280408066-e24d904909c6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1534&q=100",
@@ -64,5 +46,23 @@
     "author": "Franck V.",
     "url": "https://images.unsplash.com/photo-1569196300189-628ba1723951?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1567&q=100",
     "thumbUrl": "https://images.unsplash.com/photo-1569196300189-628ba1723951?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1567&q=33"
+  },
+  {
+    "name": "Matchwalls3",
+    "author": "Duke",
+    "url": "https://raw.githubusercontent.com/Duke0404/DukeDesign-Wallpapers/master/MatchWalls3.jpg",
+    "thumbUrl": "https://raw.githubusercontent.com/Duke0404/DukeDesign-Wallpapers/master/Thumb-MatchWalls3.jpg"
+  },
+  {
+    "name": "Matchwalls3",
+    "author": "Duke",
+    "url": "https://raw.githubusercontent.com/Duke0404/DukeDesign-Wallpapers/master/MatchWalls3-ALT2.jpg",
+    "thumbUrl": "https://raw.githubusercontent.com/Duke0404/DukeDesign-Wallpapers/master/Thumb-MatchWalls3-ALT2.jpg"
+  },
+  {
+    "name": "Matchwalls3",
+    "author": "Duke",
+    "url": "https://raw.githubusercontent.com/Duke0404/DukeDesign-Wallpapers/master/MatchWalls3-ALT3.jpg",
+    "thumbUrl": "https://raw.githubusercontent.com/Duke0404/DukeDesign-Wallpapers/master/Thumb-MatchWalls3-ALT3.jpg"
   }
 ]
