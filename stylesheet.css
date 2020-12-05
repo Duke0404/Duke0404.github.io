@@ -47,16 +47,17 @@ a {
 
 .panel {
   display: flex;
-  flex-direction: column;
+  flex-direction: wrap;
   align-items: center;
   justify-content: center;
 
-  width: 90%;
-  border-radius: 25px;
-  padding: 0;
+  border-radius: 38px;
+  padding: 10px;
   margin: 0;
+}
 
-  transition: 0.5s ease;
+#panel1 {
+  flex-direction: column;
 }
 
 #panel2 {
@@ -92,9 +93,21 @@ a {
   max-width: 200px;
 }
 
+.panelComponent {
+  
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 38px;
+  padding: 10px;
+  margin: 0;
+}
+
 .panelIcon {
-  border-radius: 22%;
-  margin: 25px;
+  border-radius: 40px;
 
   max-width: 200px;
 }
