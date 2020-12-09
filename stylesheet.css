@@ -54,11 +54,11 @@ a {
 }
 
 .panel {
-  min-width: 80%;
+  width: 90%;
   min-height: fit-content;
 
   display: flex;
-  flex-direction: wrap;
+  flex-direction: row wrap;
   align-items: center;
   justify-content: center;
 
@@ -110,10 +110,12 @@ a {
   background-color: var(--primary-color);
 
   height: 150px;
+  min-width: 340px;
 
   display: flex;
   flex-direction: row;
   flex-grow: 1;
+  flex: auto;
   align-items: center;
   justify-content: flex-start;
 
