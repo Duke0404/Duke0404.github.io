@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&display=swap');
+
 :root {
   --primary-color: #fff;
   --primary-color-inv: #101010;
@@ -10,140 +13,56 @@
   }
 }
 
-@font-face {
-  font-family: "Product Sans";
-  src: url("Product\ Sans\ Bold.ttf") format("ttf");
-}
-
 body {
-  color: var(--primary-color-inv);
-  background-color: var(--primary-color);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: var(--primary-color);
 
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 
-  font-family: Product Sans;
-  font-size: 20px;
-
-  padding: 0;
-  padding-top: 25px;
-  margin: 0;
+  padding: 50px 0 0 0;
 }
 
 h1 {
-  font-family: Product Sans;
-  font-size: 60px;
+  font-weight: 800;
 
-  margin: 0;
   padding: 0;
-}
-
-h2 {
-  font-family: Product Sans;
-  font-size: 40px;
-
   margin: 0;
-  padding: 0;
 }
 
-a {
-  color: var(--primary-color-inv);
-  text-decoration: none;
-}
-
-.panel {
-  width: 90%;
-  min-height: fit-content;
+button {
+  background-color: var(--primary-color-inv);
 
   display: flex;
-  flex-direction: row wrap;
   align-items: center;
   justify-content: center;
 
-  border-radius: 60px;
-  padding: 20px;
+  padding: 10px;
+  border: none;
   margin: 0;
+
+  border-radius: 50%;
+
+  cursor: pointer;
+  transition: background 400ms;
 }
 
-#panel1 {
-  flex-direction: column;
-}
+span.ripple {
+  background-color: rgba(0, 0, 0, 0.7);
 
-#panel2 {
-  background-color: #726cf8;
-  background-image: linear-gradient(315deg, #726cf8 0%, #e975a8 74%);
-}
+  position: absolute;
 
-.socialSheet {
-  color: var(--primary-color-inv);
+  border-radius: 50%;
   
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  padding: 10px 20px;
+  transform: scale(0);
+  animation: ripple 600ms linear;
 }
 
-#profileCarousel {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-
-  margin: 25px;
-}
-
-.profileComponent {
-  border-radius: 100%;
-  padding: 0 10px;
-
-  max-width: 100px;
-}
-
-#profileHero {
-  max-width: 200px;
-}
-
-.panelComponent {
-  background-color: var(--primary-color);
-
-  height: 150px;
-  min-width: 340px;
-
-  display: flex;
-  flex-direction: row;
-  flex-grow: 1;
-  flex: auto;
-  align-items: center;
-  justify-content: flex-start;
-
-  border-radius: 50px;
-  padding: 20px;
-  margin: 0 10px;
-}
-
-.panel > :first-child{
-  margin-left: 0;
-}
-
-.panel > :last-child {
-  margin-right: 0;
-}
-
-
-.panelIcon {
-  border-radius: 40px;
-
-  max-height: 100%;
-}
-
-.panelText {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-
-  padding: 20px;
+@keyframes ripple {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
 }
