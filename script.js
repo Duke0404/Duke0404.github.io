@@ -1,18 +1,18 @@
 !function() {
     "use strict";
     
-    var t = function(t) {
-        var e = document.getElementById(t.mainElement),
+    var t = function(x) {
+        var e = document.getElementById(x.mainElement),
         s = e.getElementsByTagName("section"),
         n = {
             container:e,
             sections:s,
-            animateTime:t.animateTime || .7,
-            animateFunction:t.animateFunction || "ease",
+            animateTime:x.animateTime || .7,
+            animateFunction:x.animateFunction || "ease",
             maxPosition:s.length-1,
             currentPosition:0,
-            displayDots:"undefined"==typeof t.displayDots || t.displayDots,
-            dotsPosition:t.dotsPosition || "left"
+            displayDots:"undefined"==typeof x.displayDots || x.displayDots,
+            dotsPosition:x.dotsPosition || "left"
         };
         this.defaults = n,
         this.init()
