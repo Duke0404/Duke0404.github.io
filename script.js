@@ -1,9 +1,21 @@
 !function() {
     "use strict";
     
-    var t=function(t) {
-        var e=document.getElementById(t.mainElement),s=e.getElementsByTagName("section"),n={container:e,sections:s,animateTime:t.animateTime||.7,animateFunction:t.animateFunction||"ease",maxPosition:s.length-1,currentPosition:0,displayDots:"undefined"==typeof t.displayDots||t.displayDots,dotsPosition:t.dotsPosition||"left"};
-        this.defaults=n,this.init()
+    var t = function(t) {
+        var e = document.getElementById(t.mainElement),
+        s = e.getElementsByTagName("section"),
+        n = {
+            container:e,
+            sections:s,
+            animateTime:t.animateTime || .7,
+            animateFunction:t.animateFunction || "ease",
+            maxPosition:s.length-1,
+            currentPosition:0,
+            displayDots:"undefined"==typeof t.displayDots || t.displayDots,
+            dotsPosition:t.dotsPosition || "left"
+        };
+        this.defaults = n,
+        this.init()
     };
 
     t.prototype.init = function() {
@@ -17,7 +29,9 @@
     },
     
     t.prototype.buildDots = function() {
-        this.ul=document.createElement("ul"),this.ul.className=this.updateClass(1,"dots",this.ul.className),this.ul.className=this.updateClass(1,"right"==this.defaults.dotsPosition?"dots-right":"dots-left",this.ul.className);
+        this.ul=document.createElement("ul"),
+        this.ul.className=this.updateClass(1,"dots",this.ul.className),
+        this.ul.className=this.updateClass(1,"right"==this.defaults.dotsPosition?"dots-right":"dots-left",this.ul.className);
         for(var t=this,e=this.defaults.sections,s=0;s<e.length;s++) {
             var n=document.createElement("li"),i=document.createElement("a");
             i.setAttribute("href","#"+s),n.appendChild(i),t.ul.appendChild(n)
@@ -50,7 +64,8 @@
         },
             
         this.touchEnd = function(n) {
-            e=parseInt(n.changedTouches[0].clientY),(e-t>100||t-e>100)&&(e>t?s.defaults.currentPosition--:s.defaults.currentPosition++,s.changeCurrentPosition(s.defaults.currentPosition))
+            e=parseInt(n.changedTouches[0].clientY),
+            (e-t>100||t-e>100)&&(e>t?s.defaults.currentPosition--:s.defaults.currentPosition++,s.changeCurrentPosition(s.defaults.currentPosition))
         },
             
         this.hashChange = function(t) {
