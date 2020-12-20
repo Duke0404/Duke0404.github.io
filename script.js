@@ -29,12 +29,28 @@
         return document.addEventListener?(document.addEventListener("mousewheel",this.mouseWheelAndKey,!1),document.addEventListener("wheel",this.mouseWheelAndKey,!1),document.addEventListener("keyup",this.mouseWheelAndKey,!1),document.addEventListener("touchstart",this.touchStart,!1),document.addEventListener("touchend",this.touchEnd,!1),window.addEventListener("hashchange",this.hashChange,!1),/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)&&("ontouchstart"in window||(document.body.style="overflow: scroll;",document.documentElement.style="overflow: scroll;"))):(document.attachEvent("onmousewheel",this.mouseWheelAndKey,!1),document.attachEvent("onkeyup",this.mouseWheelAndKey,!1)),this},t.prototype.buildPublicFunctions=function(){var t=0,e=0,s=this;
             
             return this.mouseWheelAndKey = function(t) {
-                t.deltaY>0||40==t.keyCode?(s.defaults.currentPosition++,s.changeCurrentPosition(s.defaults.currentPosition)):(t.deltaY<0||38==t.keyCode)&&(s.defaults.currentPosition--,s.changeCurrentPosition(s.defaults.currentPosition)),s.removeEvents()},this.touchStart=function(s){t=parseInt(s.changedTouches[0].clientY),e=0},this.touchEnd=function(n){e=parseInt(n.changedTouches[0].clientY),(e-t>100||t-e>100)&&(e>t?s.defaults.currentPosition--:s.defaults.currentPosition++,s.changeCurrentPosition(s.defaults.currentPosition))
+                t.deltaY>0||40==t.keyCode?(s.defaults.currentPosition++,s.changeCurrentPosition(s.defaults.currentPosition)):(t.deltaY<0||38==t.keyCode)&&(s.defaults.currentPosition--,s.changeCurrentPosition(s.defaults.currentPosition)),s.removeEvents()
             },
             
-            this.hashChange=function(t){if(location){var e=location.hash.replace("#","").split("/")[0];
-
-            ""!==e&&(e<0?s.changeCurrentPosition(0):e>s.defaults.maxPosition?s.changeCurrentPosition(s.defaults.maxPosition):(s.defaults.currentPosition=e,s.animateScroll()))}},this.removeEvents=function(){document.addEventListener?(document.removeEventListener("mousewheel",this.mouseWheelAndKey,!1),document.removeEventListener("wheel",this.mouseWheelAndKey,!1),document.removeEventListener("keyup",this.mouseWheelAndKey,!1),document.removeEventListener("touchstart",this.touchStart,!1),document.removeEventListener("touchend",this.touchEnd,!1)):(document.detachEvent("onmousewheel",this.mouseWheelAndKey,!1),document.detachEvent("onkeyup",this.mouseWheelAndKey,!1)),setTimeout(function(){s.addEvents()},600)
+            this.touchStart = function(s) {
+                t=parseInt(s.changedTouches[0].clientY),e=0
+            },
+            
+            this.touchEnd = function(n) {
+                    e=parseInt(n.changedTouches[0].clientY),(e-t>100||t-e>100)&&(e>t?s.defaults.currentPosition--:s.defaults.currentPosition++,s.changeCurrentPosition(s.defaults.currentPosition))
+            },
+            
+            this.hashChange = function(t) {
+                if(location) {
+                    var e=location.hash.replace("#","").split("/")[0];
+                    ""!==e&&(e<0?s.changeCurrentPosition(0):e>s.defaults.maxPosition?s.changeCurrentPosition(s.defaults.maxPosition):(s.defaults.currentPosition=e,s.animateScroll()))
+                }
+            },
+            
+            this.removeEvents=function(){document.addEventListener?(document.removeEventListener("mousewheel",this.mouseWheelAndKey,!1),document.removeEventListener("wheel",this.mouseWheelAndKey,!1),document.removeEventListener("keyup",this.mouseWheelAndKey,!1),document.removeEventListener("touchstart",this.touchStart,!1),document.removeEventListener("touchend",this.touchEnd,!1)):(document.detachEvent("onmousewheel",this.mouseWheelAndKey,!1),
+            document.detachEvent("onkeyup",this.mouseWheelAndKey,!1)),
+            
+            setTimeout(function(){s.addEvents()},600)
         },
         
         this.animateScroll=function(){
