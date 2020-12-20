@@ -37,27 +37,27 @@
             ""!==e&&(e<0?s.changeCurrentPosition(0):e>s.defaults.maxPosition?s.changeCurrentPosition(s.defaults.maxPosition):(s.defaults.currentPosition=e,s.animateScroll()))}},this.removeEvents=function(){document.addEventListener?(document.removeEventListener("mousewheel",this.mouseWheelAndKey,!1),document.removeEventListener("wheel",this.mouseWheelAndKey,!1),document.removeEventListener("keyup",this.mouseWheelAndKey,!1),document.removeEventListener("touchstart",this.touchStart,!1),document.removeEventListener("touchend",this.touchEnd,!1)):(document.detachEvent("onmousewheel",this.mouseWheelAndKey,!1),document.detachEvent("onkeyup",this.mouseWheelAndKey,!1)),setTimeout(function(){s.addEvents()},600)
         },
         
-        this.animateScroll=function(){var t=this.defaults.animateTime,e=this.defaults.animateFunction,s=100*this.defaults.currentPosition;
+        this.animateScroll=function(){
+            var t=this.defaults.animateTime,e=this.defaults.animateFunction,s=100*this.defaults.currentPosition;
         
-        this.defaults.container.style.webkitTransform="translateY(-"+s+"%)",this.defaults.container.style.mozTransform="translateY(-"+s+"%)",this.defaults.container.style.msTransform="translateY(-"+s+"%)",this.defaults.container.style.transform="translateY(-"+s+"%)",this.defaults.container.style.webkitTransition="all "+t+"s "+e,this.defaults.container.style.mozTransition="all "+t+"s "+e,this.defaults.container.style.msTransition="all "+t+"s "+e,this.defaults.container.style.transition="all "+t+"s "+e;
+            this.defaults.container.style.webkitTransform="translateY(-"+s+"%)",this.defaults.container.style.mozTransform="translateY(-"+s+"%)",this.defaults.container.style.msTransform="translateY(-"+s+"%)",this.defaults.container.style.transform="translateY(-"+s+"%)",this.defaults.container.style.webkitTransition="all "+t+"s "+e,this.defaults.container.style.mozTransition="all "+t+"s "+e,this.defaults.container.style.msTransition="all "+t+"s "+e,this.defaults.container.style.transition="all "+t+"s "+e;
         
-        for(var n=0;n<this.ul.childNodes.length;n++)
-        this.ul.childNodes[n].firstChild.className=this.updateClass(2,"active",this.ul.childNodes[n].firstChild.className),n==this.defaults.currentPosition&&(this.ul.childNodes[n].firstChild.className=this.updateClass(1,"active",this.ul.childNodes[n].firstChild.className))
-    },
+            for(var n=0;n<this.ul.childNodes.length;n++)
+            this.ul.childNodes[n].firstChild.className=this.updateClass(2,"active",this.ul.childNodes[n].firstChild.className),n==this.defaults.currentPosition&&(this.ul.childNodes[n].firstChild.className=this.updateClass(1,"active",this.ul.childNodes[n].firstChild.className))
+        },
     
-    this.changeCurrentPosition = function(t) {
-        ""!==t&&(s.defaults.currentPosition=t,location.hash=s.defaults.currentPosition)
-    },
+        this.changeCurrentPosition = function(t) {
+            ""!==t&&(s.defaults.currentPosition=t,location.hash=s.defaults.currentPosition)
+        },
 
-    this.registerIeTags = function() {
-        document.createElement("section")
-    },
+        this.registerIeTags = function() {
+            document.createElement("section")
+        },
     
-    this.updateClass=function(t,e,s) {
-        return 1==t?s+=" "+e:2==t?s.replace(e,""):void 0
-    },
-    
+        this.updateClass=function(t,e,s) {
+            return 1==t?s+=" "+e:2==t?s.replace(e,""):void 0
+        },
     this
-},
+    },
 window.fullScroll=t
 }();
