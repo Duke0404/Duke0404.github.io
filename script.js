@@ -5,26 +5,30 @@
         var e = document.getElementById(x.mainElement),
         s = e.getElementsByTagName("section"),
         n = {
-            container:e,
-            sections:s,
-            animateTime:x.animateTime || .7,
-            animateFunction:x.animateFunction || "ease",
-            maxPosition:s.length-1,
-            currentPosition:0,
-            displayDots:"undefined"==typeof x.displayDots || x.displayDots,
-            dotsPosition:x.dotsPosition || "left"
+            container: e,
+            sections: s,
+            animateTime: .7,
+            animateFunction: "ease",
+            maxPosition: s.length-1,
+            currentPosition: 0,
+            displayDots: x.displayDots,
+            dotsPosition: "right",
         };
         this.defaults = n,
         this.init()
     };
 
     t.prototype.init = function() {
-        this.buildPublicFunctions().buildSections().buildDots().addEvents();var t=location.hash.replace("#","").split("/")[0];
-        location.hash=0,this.changeCurrentPosition(t),this.registerIeTags()
+        this.buildPublicFunctions().buildSections().buildDots().addEvents();
+        var t=location.hash.replace("#","").split("/")[0];
+        location.hash=0,
+        this.changeCurrentPosition(t),
+        this.registerIeTags()
     },
 
     t.prototype.buildSections = function() {
-        for(var t=this.defaults.sections,e=0;e<t.length;e++)t[e].setAttribute("data-index",e);
+        for(var t=this.defaults.sections,e=0;e<t.length;e++)
+            {t[e].setAttribute("data-index",e);}
         return this
     },
     
