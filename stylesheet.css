@@ -38,7 +38,7 @@ section {
   opacity: 25%;
 }
 
-@media (min-width: 1000px) {
+@media (orientation: landscape {
   .panel {
     position: relative;
   }
