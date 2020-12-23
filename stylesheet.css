@@ -7,7 +7,7 @@
 body {
   background-color: var(--color0);
 
-  font-size: 25px;
+  font-size: 22px;
   font-family: 'Titillium Web', sans-serif;
 }
 
@@ -15,6 +15,12 @@ h1 {
   font-size: 65px;
 
   margin: -20px;
+}
+
+h2 {
+  font-size: 35px;
+
+  margin: 0;
 }
 
 section {
@@ -31,6 +37,43 @@ section {
   justify-content: center;
 
   height: 100%;
+}
+
+.dash {
+  background-color: #ffffff50;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 80%;
+  width: 80%;
+
+  border-radius: 50px;
+}
+
+.card {
+  background-color: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 500px;
+  height: 180px;
+
+  padding: 20px;
+
+  border-radius: 40px;
+}
+
+.card img {
+  height: 100%;
+  border-radius: 30px;
+}
+
+.cardText {
+  margin-left: 20px;
 }
 
 #photo-collage {
