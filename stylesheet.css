@@ -43,11 +43,13 @@ section {
   background-color: #ffffff50;
 
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 
-  height: 80%;
   width: 80%;
+
+  padding: 10px;
 
   border-radius: 50px;
 }
@@ -56,19 +58,20 @@ section {
   background-color: #fff;
 
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 
-  width: 500px;
-  height: 180px;
+  width: 130px;
 
   padding: 20px;
+  margin: 10px;
 
   border-radius: 40px;
 }
 
 .card img {
-  height: 100%;
+  width: 100%;
   border-radius: 30px;
 }
 
@@ -76,18 +79,38 @@ section {
   margin-left: 20px;
 }
 
+.cardText span {
+  display: none;
+}
+
 #photo-collage {
   height: 100%;
   opacity: 25%;
 }
 
-@media (orientation: landscape) {
+@media (orientation: landscape) and (min-width: 1025px) {
   .panel {
     position: relative;
   }
 
   #photo-collage {
     opacity: 100%;
+  }
+
+  .card {
+    flex-direction: row;
+
+    width: 350px;
+    height: 130px;
+  }
+
+  .card img {
+    width: initial;
+    height: 100%;
+  }
+
+  .cardText span {
+    display: initial;
   }
 }
 /*---------------------------------------------------*/
