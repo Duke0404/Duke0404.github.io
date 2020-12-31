@@ -119,3 +119,12 @@
     },
 window.fullScroll=t
 }();
+
+function expandCard(e) {
+    var a = document.getElementById(e.target.id).style;
+    a.position = "fixed";
+
+    a.width = "80%";
+    a.height = "80%";
+    a.zIndex = "10";
+}
