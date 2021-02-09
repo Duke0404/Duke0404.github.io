@@ -1,199 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap');
-
-:root {
-  --color0: #fff;
-}
-
 body {
-  background-color: var(--color0);
+    background-color: ;
 
-  font-size: 22px;
-  font-family: 'Titillium Web', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 400;
+
+    margin: 0;
 }
 
 h1 {
-  font-size: 65px;
-
-  text-align: center;
-
-  
-  margin: 0;
-  padding: 0;
-}
-
-h2 {
-  font-size: 30px;
-
-  margin: 0;
+    font-weight: 700;
 }
 
 section {
-  background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    width: 100%;
 }
-
-.panel {
-  display: flex;
-  position: absolute;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  height: 100%;
-}
-
-.panel span {
-  text-align: center;
-}
-
-.dash {
-  background-color: #ffffff90;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.20);
-
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-
-  width: 80%;
-
-  padding: 10px;
-
-  border-radius: 50px;
-}
-
-.card {
-  background-color: #fff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.20);
-
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-
-  height: 55px;
-  width: 220px;
-
-  padding: 10px;
-  margin: 5px;
-
-  border-radius: 40px;
-}
-
-.card img {
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.20);
-
-  height: 100%;
-  border-radius: 30px;
-}
-
-.cardText {
-  margin-left: 20px;
-}
-
-.cardText span {
-  display: none;
-}
-
-#photo-collage {
-  height: 100%;
-  opacity: 25%;
-}
-
-@media (orientation: landscape) {
-  .panel {
-    position: relative;
-  }
-
-  #photo-collage {
-    opacity: 100%;
-  }
-}
-
-#graphic-section {
-  background-image: url("graphic_bg.svg");
-  background-color: #FFE9CF;
-}
-
-@media (min-width: 1024px) {
-
-  .card {
-    width: 350px;
-    height: 130px;
-
-    padding: 20px;
-    margin: 10px;
-  }
-
-  .cardText span {
-    display: initial;
-  }
-
-  h2 {
-    font-size: 35px;
-  }
-}
-/*---------------------------------------------------*/
-
-.scroll-container,.scroll-container section,body,html {
-  width:100%;
-  height:100%
-}
-
-body,html {
-  margin:0;
-  padding:0;
-  overflow:hidden
-}
-
-.scroll-container {
-  position:relative;
-  margin:0;
-  padding:0
-}
-
-.dots {
-  z-index:1;
-  list-style:none;
-  padding:0;
-  position:absolute;
-  top:50%;
-  transform:translateY(-50%)
-}
-
-.dots li a {
-  padding:10px;
-  width:4px;
-  height:5px;
-  display:block
-}
-  
-.dots li a::before {
-  content:'';
-  position:absolute;
-  width:8px;
-  height:8px;
-  background:rgba(255,255,255,.48);
-  -webkit-border-radius:10px;
-  -moz-border-radius:10px;
-  -ms-border-radius:10px;
-  -o-border-radius:10px;
-  border-radius:10px;
-  transition:transform .3s ease,background-color .3s ease
-}
-
-.dots li a.active::before {
-  content:'';
-  width:14px;
-  height:14px;
-  margin-top:-4px;
-  left:7px;
-  background-color:#fff;
-  transform:scale(1)
-}
-
-.dots-right{right:10px}
-
-.dots-left{left:10px}
